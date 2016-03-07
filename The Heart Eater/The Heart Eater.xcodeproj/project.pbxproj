@@ -8,23 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A375F95E1C8D19F000F11018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375F95D1C8D19F000F11018 /* AppDelegate.swift */; };
-		A375F9601C8D19F000F11018 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A375F95F1C8D19F000F11018 /* GameScene.sks */; };
 		A375F9621C8D19F000F11018 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375F9611C8D19F000F11018 /* GameScene.swift */; };
 		A375F9641C8D19F000F11018 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375F9631C8D19F000F11018 /* GameViewController.swift */; };
-		A375F9671C8D19F000F11018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A375F9651C8D19F000F11018 /* Main.storyboard */; };
 		A375F9691C8D19F000F11018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A375F9681C8D19F000F11018 /* Assets.xcassets */; };
-		A375F96C1C8D19F000F11018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A375F96A1C8D19F000F11018 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A375F95A1C8D19F000F11018 /* The Heart Eater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Heart Eater.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A375F95D1C8D19F000F11018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A375F95F1C8D19F000F11018 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		A375F9611C8D19F000F11018 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		A375F9631C8D19F000F11018 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		A375F9661C8D19F000F11018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A375F9681C8D19F000F11018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A375F96B1C8D19F000F11018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A375F96D1C8D19F000F11018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,12 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				A375F95D1C8D19F000F11018 /* AppDelegate.swift */,
-				A375F95F1C8D19F000F11018 /* GameScene.sks */,
 				A375F9611C8D19F000F11018 /* GameScene.swift */,
 				A375F9631C8D19F000F11018 /* GameViewController.swift */,
-				A375F9651C8D19F000F11018 /* Main.storyboard */,
 				A375F9681C8D19F000F11018 /* Assets.xcassets */,
-				A375F96A1C8D19F000F11018 /* LaunchScreen.storyboard */,
 				A375F96D1C8D19F000F11018 /* Info.plist */,
 			);
 			path = "The Heart Eater";
@@ -128,10 +119,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A375F9601C8D19F000F11018 /* GameScene.sks in Resources */,
-				A375F96C1C8D19F000F11018 /* LaunchScreen.storyboard in Resources */,
 				A375F9691C8D19F000F11018 /* Assets.xcassets in Resources */,
-				A375F9671C8D19F000F11018 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,25 +137,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A375F9651C8D19F000F11018 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A375F9661C8D19F000F11018 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A375F96A1C8D19F000F11018 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A375F96B1C8D19F000F11018 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A375F96E1C8D19F000F11018 /* Debug */ = {
@@ -257,6 +226,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "The Heart Eater/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perrotti-garcia.The-Heart-Eater";
@@ -268,6 +238,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "The Heart Eater/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perrotti-garcia.The-Heart-Eater";

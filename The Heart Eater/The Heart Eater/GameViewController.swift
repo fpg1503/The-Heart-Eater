@@ -13,41 +13,44 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let scene = GameScene(fileNamed:"GameScene") {
-            // Configure the view.
-            let skView = self.view as! SKView
+        
+        let scene = GameScene()
+        scene.size = view.bounds.size
+        let skView = SKView(frame: view.bounds)
+        
+        #if DEBUG
             skView.showsFPS = true
             skView.showsNodeCount = true
-            
-            /* Sprite Kit applies additional optimizations to improve rendering performance */
-            skView.ignoresSiblingOrder = true
-            
-            /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .AspectFill
-            
-            skView.presentScene(scene)
-        }
+        #endif
+        
+        skView.ignoresSiblingOrder = true
+        scene.scaleMode = .AspectFill
+        
+        skView.presentScene(scene)
+        view = skView
     }
+}
 
+// MARK - Status bar
+
+extension GameViewController {
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+}
+
+// MARK - Rotation
+
+extension GameViewController {
     override func shouldAutorotate() -> Bool {
         return true
     }
-
+    
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
             return .AllButUpsideDown
         } else {
             return .All
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
-    }
-
-    override func prefersStatusBarHidden() -> Bool {
-        return true
     }
 }
